@@ -1,0 +1,36 @@
+body{
+    margin: 5px;
+    padding: 5px;
+}
+p{
+    text-align: center;
+    font-family: cursive;
+    margin-top: 20%;
+}
+.box1{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.container1{
+    background-color: aquamarine;
+    height: 300px;
+    width: 300px;
+}
+
+.container2{
+    background-color: skyblue;
+    height: 300px;
+    width: 300px;
+}
+.container3{
+    background-color: greenyellow;
+    height: 300px;
+    width: 300px;
+}
+.container4{
+    background-color: yellow;
+    height: 300px;
+    width: 300px;
+}

@@ -1,0 +1,38 @@
+#box1{
+   color: white;
+}
+
+h1:hover{
+    animation: heddingAnimation 2s ease-in-out 0s infinite ;
+}
+
+@keyframes heddingAnimation{
+    from{
+        transform: rotateY(0);
+    }
+    to{
+        transform: rotateY(40deg);
+       
+    }
+}
+
+.card:hover{
+    animation: myAnimation 1s ease-in-out 0s alternate ;
+}
+
+@keyframes myAnimation{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+       
+    }
+}
+
+.nav-item:hover{
+    border-radius: 5px;
+    text-decoration: 5px solid underline;
+    background-color: orange;
+    text-transform: uppercase;
+}

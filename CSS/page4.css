@@ -1,0 +1,19 @@
+.box{
+    border: 20px solid yellow;
+    border-top: 20px solid black;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    animation: myAnimation 1s ease-in-out 0s infinite ;
+    
+}
+
+@keyframes myAnimation{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+       
+    }
+}

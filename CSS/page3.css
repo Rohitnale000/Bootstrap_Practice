@@ -1,0 +1,18 @@
+body{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    background-color: gold;
+    height: 200px;
+    width: 200px;
+    transition: all;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+}
+.box:hover{
+    transform: rotate(180deg);
+    background-color: green;
+    /* transform: translateY(200px); */
+}
