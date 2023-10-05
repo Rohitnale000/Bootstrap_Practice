@@ -1,0 +1,25 @@
+.container{
+   border: 2px solid black;
+   height: 2000px;
+}
+.one{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+}
+
+.two{
+    position: relative;
+    left: 100px;
+    top: 100px;
+}
+
+.three{
+    position: sticky;
+    top: 30px;
+}
+.four{
+    position: relative;
+    left: 20px;
+    top: 400px;
+}
