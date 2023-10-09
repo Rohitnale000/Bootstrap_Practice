@@ -1,0 +1,100 @@
+//by using _flie_name we can declear colors,button,text,font and many more @import we can use any variable
+@import "color";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;300;400;500;600;700;800;900&family=Ubuntu:wght@300&display=swap");
+
+$text-size: 18px;
+
+body {
+    margin: 0px;
+    font-family: "Noto Sans";
+}
+
+//mixing concept declear once and @include we are use that
+@mixin flex_container {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: row;
+}
+
+@mixin d-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+@mixin container {
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+@mixin border-radius($value){
+    border-radius:$value ;
+    @content;
+}
+
+.header {
+    background-color: $primary_color;
+    padding: 1px;
+    @include flex_container;
+
+    ul {
+        padding: 0px;
+    }
+
+    li {
+        display: inline;
+        list-style-type: none;
+    }
+
+    a {
+        padding: 10px 20px;
+        color: $text_color;
+        font-weight: 500;
+        font-size: 20px;
+        text-decoration: none;
+        text-align: center;
+        &:hover {
+            background-color: #64ccc5;
+        }
+    }
+}
+
+.container {
+    @include container();
+
+    .child {
+        @include d-flex();
+
+        p {
+            padding: 10px;
+            font-size: $text-size;
+        }
+    }
+}
+
+.container {
+    @include container();
+    .box1 {
+        background-color: $p_background_color;
+        border: 1px solid;
+        border-radius: 25px;
+        p {
+            padding: 10px;
+            font-size: $text-size;
+        }
+    }
+
+    .box2{
+        background-color: orange;
+        margin-top: 10px;
+        @extend .box1
+    }
+}
+
+.demo{
+    @include border-radius(10);
+    border-style: solid;
+}

@@ -16,7 +16,7 @@
         <div class="row justify-content-center pt-4">
             <div class="col-lg-4 col-sm-12 p-5 rounded-4 shadow">
                 <div class="mb-3">
-                    <label for="formGroupExampleInput" class="form-label fw-bold">Full Name</label>
+                    <label for="formGroupExampleInput" class="form-label fw-bold">Full Name</label><span class="text-danger ps-1 fs-5 pt-2">*</span>
                     <input type="text" class="form-control border-black shadow" id="formGroupExampleInput" placeholder="Enter Name">
                 </div>
                 <div class="mb-3">
@@ -25,23 +25,23 @@
                 </div>
 
                 <div class="mb-3">
-                    <label for="formGroupExampleInput" class="form-label fw-bold">Address</label>
+                    <label for="formGroupExampleInput" class="form-label fw-bold">Address</label><span class="text-danger ps-1 fs-5 pt-2">*</span>
                     <input type="text" class="form-control border-black shadow" id="" placeholder="Enter Address">
                 </div>
                 <div class="mb-3">
-                    <label for="formGroupExampleInput2" class="form-label fw-bold">Email</label>
+                    <label for="formGroupExampleInput2" class="form-label fw-bold">Email</label><span class="text-danger ps-1 fs-5 pt-2">*</span>
                     <input type="email" class="form-control border-black shadow" id="" placeholder="Another input placeholder">
                 </div>
                 <div class="mb-3">
-                    <label for="formGroupExampleInput2" class="form-label fw-bold">Password</label>
+                    <label for="formGroupExampleInput2" class="form-label fw-bold">Password</label><span class="text-danger ps-1 fs-5 pt-2">*</span>
                     <input type="password" class="form-control border-black shadow" id="" placeholder="Enter Password">
                 </div>
                 <div class="pt-3 d-flex justify-content-around">
                     <div>
-                        <button class="btn btn-outline-primary fs-4" onclick="return myFun()">Submit</button>
+                        <button class="btn btn-outline-primary fs-4" onclick="myFun()">Submit</button>
                     </div>
                     <div>
-                        <button class="btn btn-outline-danger fs-4">Cancel</button>
+                        <button class="btn btn-outline-danger fs-4" onclick="reset()">Cancel</button>
                     </div>
                 </div>
             </div>
